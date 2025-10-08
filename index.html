@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .greeting-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+            font-size: 1.2em;
+            border: 1px solid #eee;
+            animation: slideDown 0.5s ease-out;
+            transition: opacity 0.5s ease-out;
+            opacity: 0;
+            display: none;
+        }
+
+        @keyframes slideDown {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
+            to {
+                top: 20px;
+                opacity: 1;
+            }
+        }
+
+        .greeting-container #greeting {
+            color: #333;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .greeting-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./pics/erzhikmlo.JPG" alt="Profile Picture" class="profile-img">
+        <h1>Moldozhanov Erzhan</h1>
+        <p>Web Developer & Designer</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        </div>
+    </header>
+
+
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm a passionate web developer with experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful and intuitive designs. With a strong foundation in modern web technologies and a keen eye for design, I strive to create memorable digital experiences that make a difference.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Senior Web Developer</h3>
+                    <div class="date">2023 - Present</div>
+                    <p>TechCorp Solutions</p>
+                    <ul>
+                        <li>Led development of enterprise-level web applications</li>
+                        <li>Managed team of 5 junior developers</li>
+                        <li>Implemented CI/CD pipelines improving deployment efficiency by 40%</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Web Developer</h3>
+                    <div class="date">2021 - 2023</div>
+                    <p>Digital Innovations Inc.</p>
+                    <ul>
+                        <li>Developed responsive websites for clients across various industries</li>
+                        <li>Optimized website performance improving load times by 60%</li>
+                        <li>Collaborated with design team to implement pixel-perfect designs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu-exp-item">
+                <h3>Master of Science in Computer Science</h3>
+                <div class="date">2019 - 2021</div>
+                <p>Stanford University</p>
+                <p>Specialization in Web Technologies and Cloud Computing</p>
+            </div>
+            <div class="edu-exp-item">
+                <h3>Bachelor of Science in Software Engineering</h3>
+                <div class="date">2015 - 2019</div>
+                <p>MIT</p>
+                <p>Dean's List, Graduate with Honors</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce platform developed using modern web technologies.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A mobile-first web application with dynamic features.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">UI/UX Design</span>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <div class="date">2024</div>
+                    <p>Amazon Web Services</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Google Cloud Professional Developer</h3>
+                    <div class="date">2024</div>
+                    <p>Google</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Meta Frontend Developer Certificate</h3>
+                    <div class="date">2023</div>
+                    <p>Meta</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moldozhanov Erzhan. All rights reserved.</p>
+    </footer>
+
+    <div class="greeting-container">
+        <i class="fas fa-hand-wave greeting-icon"></i>
+        <span id="greeting"></span>
+    </div>
+
+    <script>
+        // Получаем элемент для приветствия
+        const g = document.getElementById('greeting');
+        const greetingContainer = document.querySelector('.greeting-container');
+
+        // Функция показывает приветствие
+        function showGreeting(name) {
+            g.textContent = name
+                ? `Привет, ${name}!`
+                : 'Добро пожаловать!';
+            
+            // Показываем контейнер
+            greetingContainer.style.display = 'block';
+            greetingContainer.style.opacity = '1';
+            
+            // Скрываем через 3 секунды
+            setTimeout(() => {
+                greetingContainer.style.opacity = '0';
+                setTimeout(() => {
+                    greetingContainer.style.display = 'none';
+                }, 500);
+            }, 3000);
+        }
+
+        // Спрашиваем имя при загрузке страницы
+        window.onload = function() {
+            const name = prompt('Как тебя зовут?');
+            if (name) {
+                localStorage.setItem('visitorName', name);
+            } else {
+                localStorage.removeItem('visitorName');
+            }
+            showGreeting(localStorage.getItem('visitorName'));
+        };
+    </script>
+
+
+
+
+</body>
+</html>
